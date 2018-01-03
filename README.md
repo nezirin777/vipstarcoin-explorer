@@ -1,6 +1,6 @@
 # Explorer
 
-A QTUM blockchain explorer web application service for [Qtumcore Node](https://github.com/qtumproject/qtumcore-node) using the [QTUM API](https://github.com/qtumproject/insight-api).
+A HTMLCOIN blockchain explorer web application service for [HTMLCOINCORE Node](https://github.com/HTMLCOIN/htmlcoincore-node) using the [HTMLCOIN API](https://github.com/HTMLCOIN/htmlcoin-api).
 
 
 ## Install via SSH
@@ -10,34 +10,34 @@ nvm use v6
 ```
 
 ```
-npm install git+ssh://git@github.com:qtumproject/qtumcore-node.git#master
-$(npm bin)/qtumcore-node create mynode
-cd mynode 
-
-$(npm bin)/qtumcore-node install git+ssh://git@github.com:qtumproject/insight-api.git#master
-$(npm bin)/qtumcore-node install git+ssh://git@github.com:qtumproject/qtum-explorer.git#master
+npm install git//github.com/HTMLCOIN/htmlcoincore-node.git#master
+cd htmlcoincore-node
+./bin/htmlcoincore-node create explorer
+cd explorer 
+./bin/htmlcoincore-node install htmlcoin-api
+./bin/htmlcoincore-node install htmlcoin-explorer
 
 ```
 
-Edit qtumcore-node.json:
+Edit htmlcoincore-node.json:
 ```
 {
   "network": "livenet",
   "port": 3001,
   "services": [
-    "qtumd",
-    "qtum-insight-api",
-    "qtum-explorer",
+    "htmlcoind",
+    "htmlcoin-api",
+    "htmlcoin-explorer",
     "web"
   ],
   "servicesConfig": {
-    "qtum-explorer": {
-      "apiPrefix": "qtum-insight-api",
-      "routePrefix": "qtum-explorer",
-      "nodemapLink": "https://qtum.org/en/nodemap"
+    "htmlcoin-explorer": {
+      "apiPrefix": "htmlcoin-api",
+      "routePrefix": "htmlcoin-explorer",
+	  "nodemapLink": "http://explorer.htmlcoin.com/en/nodemap"
     },
-    "qtum-insight-api": {
-      "routePrefix": "qtum-insight-api",
+    "htmlcoin-api": {
+      "routePrefix": "htmlcoin-api",
       "rateLimiterOptions": {
         "whitelist": ["123.456.12.34", "::ffff:123.456.12.34"],
         "whitelistLimit": 9999999,
@@ -48,7 +48,7 @@ Edit qtumcore-node.json:
       "db": {
         "host": "127.0.0.1",
         "port": "27017",
-        "database": "qtum-api",
+        "database": "htmlcoin-explorer",
         "user": "",
         "password": ""
       },
@@ -56,17 +56,17 @@ Edit qtumcore-node.json:
         "updateFromBlockHeight": 0
       }
     },
-    "qtumd": {
+    "htmlcoind": {
       "spawn": {
-        "datadir": "/home/user/.qtum",
-        "exec": "/home/user/qtum-bitcore/src/qtumd"
+        "datadir": "/home/user/.htmlcoin",
+        "exec": "/home/user/htmlcoincore-node/bin/htmlcoind"
       }
     }
   }
 }
 ```
 
-Edit qtum.conf:
+Edit htmlcoin.conf:
 ```
 server=1
 whitelist=127.0.0.1
@@ -87,7 +87,7 @@ logevents=1
 ```
 
 ```
-$(npm bin)/qtumcore-node start
+$(npm bin)/htmlcoincore-node start
 ```
 
 
@@ -96,15 +96,15 @@ $(npm bin)/qtumcore-node start
 To manually install all of the necessary components, you can run these commands:
 
 ```bash
-npm install -g qtumcore-node
-qtumcore-node create mynode
+npm install -g htmlcoincore-node
+htmlcoincore-node create mynode
 cd mynode
-qtumcore-node install qtum-insight-api
-qtumcore-node install qtum-explorer
-qtumcore-node start
+htmlcoincore-node install htmlcoin-api
+htmlcoincore-node install htmlcoin-explorer
+htmlcoincore-node start
 ```
 
-Open a web browser to `http://localhost:3001/qtum-explorer`
+Open a web browser to `http://localhost:3001/htmlcoin-explorer`
 
 ## Development
 
@@ -155,11 +155,11 @@ compile***.
 
 ## Note
 
-For more details about the [QTUM API](https://github.com/qtumproject/insight-api) configuration and end-points, go to [QTUM API](https://github.com/qtumproject/insight-api).
+For more details about the [HTMLCOIN API](https://github.com/HTMLCOIN/htmlcoin-api) configuration and end-points, go to [HTMLCOIN API](https://github.com/HTMLCOIN/htmlcoin-api).
 
 ## Contribute
 
-Contributions and suggestions are welcomed at the [Explorer GitHub repository](https://github.com/qtumproject/qtum-explorer).
+Contributions and suggestions are welcomed at the [Explorer GitHub repository](https://github.com/HTMLCOIN/htmlcoin-explorer).
 
 
 ## License

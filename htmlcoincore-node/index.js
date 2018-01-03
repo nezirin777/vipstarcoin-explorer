@@ -9,7 +9,7 @@ var InsightUI = function(options) {
   if (typeof options.apiPrefix !== 'undefined') {
     this.apiPrefix = options.apiPrefix;
   } else {
-    this.apiPrefix = 'qtum-insight-api';
+    this.apiPrefix = 'htmlcoin-api';
   }
   if (typeof options.routePrefix !== 'undefined') {
     this.routePrefix = options.routePrefix;
@@ -27,7 +27,7 @@ var InsightUI = function(options) {
 
 };
 
-InsightUI.dependencies = ['qtum-insight-api'];
+InsightUI.dependencies = ['htmlcoin-api'];
 
 inherits(InsightUI, BaseService);
 

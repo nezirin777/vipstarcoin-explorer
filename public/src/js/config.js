@@ -4,7 +4,7 @@ angular.module('insight')
 .constant('Constants', {
 
 	CURRENCY: {
-		QTUM : 'QTUM',
+		QTUM : 'HTML',
 		USD : 'USD',
 		mBTC : 'mBTC',
 		bits : 'bits'
@@ -20,7 +20,7 @@ angular.module('insight')
 	STORAGE_ROWS: 5,
     NETWORK: window.current_network ? window.current_network : 'livenet',
     DEFAULT_LANGUAGE: localStorage.getItem('insight-language') || 'en',
-    DEFAULT_CURRENCY: localStorage.getItem('insight-currency') || 'QTUM',
+    DEFAULT_CURRENCY: localStorage.getItem('insight-currency') || 'HTML',
 	NODEMAP_LINK: window.nodemapLink
 });
 
@@ -29,7 +29,7 @@ angular.module('insight').config(function($routeProvider) {
 	$routeProvider.
 	when('/block/:blockHash', {
 		templateUrl: 'views/block.html',
-		title: 'Quantum Block '
+		title: 'HTMLCOIN Block '
 	}).
 	when('/block-index/:blockHeight', {
 		controller: 'BlocksController',
@@ -41,7 +41,7 @@ angular.module('insight').config(function($routeProvider) {
 	}).
 	when('/tx/:txId/:v_type?/:v_index?', {
 		templateUrl: 'views/transaction.html',
-		title: 'Quantum Transaction '
+		title: 'HTMLCOIN Transaction '
 	}).
 	when('/', {
 		templateUrl: 'views/index.html',
@@ -49,19 +49,19 @@ angular.module('insight').config(function($routeProvider) {
 	}).
 	when('/blocks', {
 		templateUrl: 'views/block_list.html',
-		title: 'Quantum Blocks solved Today'
+		title: 'HTMLCOIN Blocks solved Today'
 	}).
 	when('/blocks-date/:blockDate/:startTimestamp?', {
 		templateUrl: 'views/block_list.html',
-		title: 'Quantum Blocks solved '
+		title: 'HTMLCOIN Blocks solved '
 	}).
 	when('/address/:addrStr', {
 		templateUrl: 'views/address.html',
-		title: 'Quantum Address '
+		title: 'HTMLCOIN Address '
 	}).
 	when('/contracts/:contractAddressStr', {
 		templateUrl: 'views/contract.html',
-		title: 'Quantum Contract '
+		title: 'HTMLCOIN Contract '
 	}).
 	when('/status', {
 		templateUrl: 'views/status.html',
