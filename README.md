@@ -14,8 +14,8 @@ npm install git//github.com/HTMLCOIN/htmlcoincore-node.git#master
 cd htmlcoincore-node
 ./bin/htmlcoincore-node create explorer
 cd explorer 
-./bin/htmlcoincore-node install htmlcoin-api
-./bin/htmlcoincore-node install htmlcoin-explorer
+../bin/htmlcoincore-node install htmlcoin-api
+../bin/htmlcoincore-node install htmlcoin-explorer
 
 ```
 
