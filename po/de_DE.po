@@ -129,11 +129,11 @@ msgstr "Keine Verbindung zum Internet möglich, bitte Zugangsdaten prüfen."
 
 #: public/views/includes/connection.html
 msgid ""
-"Can't connect to htmlcoind to get live updates from the p2p network. (Tried "
-"connecting to htmlcoind at {{host}}:{{port}} and failed.)"
+"Can't connect to vipstarcoind to get live updates from the p2p network. (Tried "
+"connecting to vipstarcoind at {{host}}:{{port}} and failed.)"
 msgstr ""
-"Es ist nicht möglich mit htmlcoind zu verbinden um live Aktualisierungen vom "
-"P2P Netzwerk zu erhalten. (Verbindungsversuch zu htmlcoind an {{host}}:"
+"Es ist nicht möglich mit vipstarcoind zu verbinden um live Aktualisierungen vom "
+"P2P Netzwerk zu erhalten. (Verbindungsversuch zu vipstarcoind an {{host}}:"
 "{{port}} ist fehlgeschlagen.)"
 
 #: public/views/transaction.html
@@ -197,7 +197,7 @@ msgstr "Aktueller Status"
 #: public/views/index.html
 #, fuzzy
 #| msgid "Transactions"
-msgid "day HTMLCOIN Transaction History"
+msgid "day VIPSTARCOIN Transaction History"
 msgstr "Transaktionen"
 
 #: public/src/js/controllers/statistics.js
@@ -303,17 +303,17 @@ msgstr "Eingabe unbestätigt"
 #: public/views/index.html
 msgid ""
 "Insight is an <a href=\"https://insight.is/\" target=\"_blank\">open-source "
-"HTMLCOIN blockchain explorer</a> with complete REST and websocket APIs that "
+"VIPSTARCOIN blockchain explorer</a> with complete REST and websocket APIs that "
 "can be used for writing web wallets and other apps that need more advanced "
-"blockchain queries than provided by htmlcoind RPC. Check out the <a href="
+"blockchain queries than provided by vipstarcoind RPC. Check out the <a href="
 "\"https://github.com/bitpay/insight-ui\" target=\"_blank\" class=\"ng-scope"
 "\">source code</a>."
 msgstr ""
 "Insight ist ein <a href=\"https://insight.is/\" target=\"_blank\">Open "
-"Source HTMLCOIN Blockchain Explorer</a> tmit vollständigen REST und Websocket "
+"Source VIPSTARCOIN Blockchain Explorer</a> tmit vollständigen REST und Websocket "
 "APIs um eigene Wallets oder Applikationen zu implementieren. Hierbei werden "
 "fortschrittlichere Abfragen der Blockchain ermöglicht, bei denen die RPC des "
-"htmlcoind nicht mehr ausreichen. Der aktuelle <a href=\"https://github.com/"
+"vipstarcoind nicht mehr ausreichen. Der aktuelle <a href=\"https://github.com/"
 "bitpay/insight-ui\" target=\"_blank\" class=\"ng-scope\">Quellcode </a>tist "
 "auf Github zu finden."
 
@@ -340,7 +340,7 @@ msgstr ""
 msgid ""
 "Last Block Hash \r\n"
 "\t\t\t\t\t\t\t\t<span class=\"fsz-13\">\r\n"
-"\t\t\t\t\t\t\t\t\t({{ 'htmlcoind' | translate }})\r\n"
+"\t\t\t\t\t\t\t\t\t({{ 'vipstarcoind' | translate }})\r\n"
 "\t\t\t\t\t\t\t\t</span>"
 msgstr ""
 
@@ -482,21 +482,21 @@ msgid "Quantity"
 msgstr ""
 
 #: public/views/messages_verify.html
-msgid "HTMLCOIN comes with a way of signing arbitrary messages."
+msgid "VIPSTARCOIN comes with a way of signing arbitrary messages."
 msgstr ""
 
 #: public/views/statistics.html
-msgid "HTMLCOIN Mined"
+msgid "VIPSTARCOIN Mined"
 msgstr ""
 
 #: public/views/status.html
 #, fuzzy
-#| msgid "HTMLCOIN node information"
-msgid "HTMLCOIN node information"
-msgstr "HTMLCOIN-Node Info"
+#| msgid "VIPSTARCOIN node information"
+msgid "VIPSTARCOIN node information"
+msgstr "VIPSTARCOIN-Node Info"
 
 #: public/views/status.html
-msgid "htmlcoind"
+msgid "vipstarcoind"
 msgstr ""
 
 #: public/views/token/holders.html
@@ -592,7 +592,7 @@ msgid "Summary"
 msgstr "Zusammenfassung"
 
 #: public/views/statistics.html
-msgid "Summary of HTMLCOIN statistics for last 24 hours"
+msgid "Summary of VIPSTARCOIN statistics for last 24 hours"
 msgstr ""
 
 #: public/views/status.html
@@ -642,13 +642,13 @@ msgstr "Es gibt keine Transaktionen zu dieser Adressse"
 #: public/views/transaction_sendraw.html
 msgid ""
 "This form can be used to broadcast a raw transaction in hex format over\r\n"
-"        the HTMLCOIN network."
+"        the VIPSTARCOIN network."
 msgstr ""
 
 #: public/views/messages_verify.html
 msgid ""
 "This form can be used to verify that a message comes from\r\n"
-"        a specific HTMLCOIN address."
+"        a specific VIPSTARCOIN address."
 msgstr ""
 
 #: public/views/statistics.html
@@ -810,8 +810,8 @@ msgstr ""
 #~ msgid "Insight is an"
 #~ msgstr "Insight ist ein"
 
-#~ msgid "open-source HTMLCOIN blockchain explorer"
-#~ msgstr "Open Source HTMLCOIN Blockchain Explorer"
+#~ msgid "open-source VIPSTARCOIN blockchain explorer"
+#~ msgstr "Open Source VIPSTARCOIN Blockchain Explorer"
 
 #~ msgid "source code"
 #~ msgstr " ist auf Github zu finden"
@@ -834,8 +834,8 @@ msgstr ""
 #~ msgid "Input"
 #~ msgstr "Eingänge"
 
-#~ msgid "Last Block Hash (htmlcoind)"
-#~ msgstr "Letzter Hash (htmlcoind)"
+#~ msgid "Last Block Hash (vipstarcoind)"
+#~ msgstr "Letzter Hash (vipstarcoind)"
 
 #~ msgid "Loading Address Information"
 #~ msgstr "Lade Adressinformationen"

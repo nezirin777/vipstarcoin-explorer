@@ -4,7 +4,7 @@ angular.module('insight')
 .constant('Constants', {
 
 	CURRENCY: {
-		QTUM : 'HTML',
+		QTUM : 'VIPS',
 		USD : 'USD',
 		mBTC : 'mBTC',
 		bits : 'bits'
@@ -20,7 +20,7 @@ angular.module('insight')
 	STORAGE_ROWS: 5,
     NETWORK: window.current_network ? window.current_network : 'livenet',
     DEFAULT_LANGUAGE: localStorage.getItem('insight-language') || 'en',
-    DEFAULT_CURRENCY: localStorage.getItem('insight-currency') || 'HTML',
+    DEFAULT_CURRENCY: localStorage.getItem('insight-currency') || 'VIPS',
 	NODEMAP_LINK: window.nodemapLink
 });
 
@@ -29,7 +29,7 @@ angular.module('insight').config(function($routeProvider) {
 	$routeProvider.
 	when('/block/:blockHash', {
 		templateUrl: 'views/block.html',
-		title: 'HTMLCOIN Block '
+		title: 'VIPSTARCOIN Block '
 	}).
 	when('/block-index/:blockHeight', {
 		controller: 'BlocksController',
@@ -41,7 +41,7 @@ angular.module('insight').config(function($routeProvider) {
 	}).
 	when('/tx/:txId/:v_type?/:v_index?', {
 		templateUrl: 'views/transaction.html',
-		title: 'HTMLCOIN Transaction '
+		title: 'VIPSTARCOIN Transaction '
 	}).
 	when('/', {
 		templateUrl: 'views/index.html',
@@ -49,19 +49,19 @@ angular.module('insight').config(function($routeProvider) {
 	}).
 	when('/blocks', {
 		templateUrl: 'views/block_list.html',
-		title: 'HTMLCOIN Blocks solved Today'
+		title: 'VIPSTARCOIN Blocks solved Today'
 	}).
 	when('/blocks-date/:blockDate/:startTimestamp?', {
 		templateUrl: 'views/block_list.html',
-		title: 'HTMLCOIN Blocks solved '
+		title: 'VIPSTARCOIN Blocks solved '
 	}).
 	when('/address/:addrStr', {
 		templateUrl: 'views/address.html',
-		title: 'HTMLCOIN Address '
+		title: 'VIPSTARCOIN Address '
 	}).
 	when('/contracts/:contractAddressStr', {
 		templateUrl: 'views/contract.html',
-		title: 'HTMLCOIN Contract '
+		title: 'VIPSTARCOIN Contract '
 	}).
 	when('/status', {
 		templateUrl: 'views/status.html',

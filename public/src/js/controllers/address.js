@@ -41,7 +41,7 @@ function($scope, $rootScope, $document, $routeParams, $location, $window, Addres
 	self.balances = [];
 
 	var _startSocket = function() {
-		socket.on('htmlcoind/addresstxid', function(data) {
+		socket.on('vipstarcoind/addresstxid', function(data) {
 
 			if (data.address === addrStr) {
 
@@ -53,7 +53,7 @@ function($scope, $rootScope, $document, $routeParams, $location, $window, Addres
 			}
 		});
 	
-		socket.emit('subscribe', 'htmlcoind/addresstxid', [addrStr]);
+		socket.emit('subscribe', 'vipstarcoind/addresstxid', [addrStr]);
 	};
 
     var _parseStorageRowType = function(hex, type) {
@@ -142,7 +142,7 @@ function($scope, $rootScope, $document, $routeParams, $location, $window, Addres
 
 	var _stopSocket = function () {
 
-		socket.emit('unsubscribe', 'htmlcoind/addresstxid', [addrStr]);
+		socket.emit('unsubscribe', 'vipstarcoind/addresstxid', [addrStr]);
 	};
 
 	socket.on('connect', function() {

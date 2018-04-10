@@ -1,25 +1,24 @@
 {
-  "name": "htmlcoin-explorer",
-  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the HTMLCOIN network and build your own services with it.",
+  "name": "vipstarcoin-explorer",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the VIPSTARCOIN network and build your own services with it.",
   "version": "0.6.3",
-  "repository": "https://github.com/HTMLCOIN/htmlcoin-explorer.git",
+  "repository": "https://github.com/fkfk/vipstarcoin-explorer.git",
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/HTMLCOIN/htmlcoin-explorer/issues"
+    "url": "https://github.com/fkfk/vipstarcoin-explorer/issues"
   },
-  "homepage": "https://github.com/HTMLCOIN/htmlcoin-explorer",
+  "homepage": "https://github.com/fkfk/vipstarcoin-explorer",
   "license": "MIT",
   "keywords": [
     "insight",
     "blockchain",
     "blockexplorer",
-    "htmlcoin",
-    "htmlcoincore",
+    "vipstarcoin",
+    "vipstarcoincore",
     "front-end"
   ],
-  "htmlcoincoreNode": "htmlcoincore-node",
-  "dependencies": {
-  },
+  "vipstarcoincoreNode": "vipstarcoincore-node",
+  "dependencies": {},
   "devDependencies": {
     "bower": "~1.2.8",
     "grunt": "~0.4.2",

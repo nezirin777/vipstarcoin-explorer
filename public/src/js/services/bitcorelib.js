@@ -2,7 +2,7 @@
 
 angular.module('insight.qtumcorelib').factory('QtumCoreLib',
     function() {
-        var QtumCoreLib = require('htmlcoin-lib');
+        var QtumCoreLib = require('vipstarcoin-lib');
         return QtumCoreLib;
     });
 

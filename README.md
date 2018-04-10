@@ -1,6 +1,6 @@
 # Explorer
 
-A HTMLCOIN blockchain explorer web application service for [HTMLCOINCORE Node](https://github.com/HTMLCOIN/htmlcoincore-node) using the [HTMLCOIN API](https://github.com/HTMLCOIN/htmlcoin-api).
+A VIPSTARCOIN blockchain explorer web application service for [VIPSTARCOINCORE Node](https://github.com/VIPSTARCOIN/vipstarcoincore-node) using the [VIPSTARCOIN API](https://github.com/VIPSTARCOIN/vipstarcoin-api).
 
 
 ## Install via SSH
@@ -10,34 +10,34 @@ nvm use v6
 ```
 
 ```
-npm install git//github.com/HTMLCOIN/htmlcoincore-node.git#master
-cd htmlcoincore-node
-./bin/htmlcoincore-node create explorer
+npm install git//github.com/VIPSTARCOIN/vipstarcoincore-node.git#master
+cd vipstarcoincore-node
+./bin/vipstarcoincore-node create explorer
 cd explorer 
-../bin/htmlcoincore-node install htmlcoin-api
-../bin/htmlcoincore-node install htmlcoin-explorer
+../bin/vipstarcoincore-node install vipstarcoin-api
+../bin/vipstarcoincore-node install vipstarcoin-explorer
 
 ```
 
-Edit htmlcoincore-node.json:
+Edit vipstarcoincore-node.json:
 ```
 {
   "network": "livenet",
   "port": 3001,
   "services": [
-    "htmlcoind",
-    "htmlcoin-api",
-    "htmlcoin-explorer",
+    "vipstarcoind",
+    "vipstarcoin-api",
+    "vipstarcoin-explorer",
     "web"
   ],
   "servicesConfig": {
-    "htmlcoin-explorer": {
-      "apiPrefix": "htmlcoin-api",
-      "routePrefix": "htmlcoin-explorer",
-	  "nodemapLink": "http://explorer.htmlcoin.com/en/nodemap"
+    "vipstarcoin-explorer": {
+      "apiPrefix": "vipstarcoin-api",
+      "routePrefix": "vipstarcoin-explorer",
+	  "nodemapLink": "http://explorer.vipstarcoin.com/en/nodemap"
     },
-    "htmlcoin-api": {
-      "routePrefix": "htmlcoin-api",
+    "vipstarcoin-api": {
+      "routePrefix": "vipstarcoin-api",
       "rateLimiterOptions": {
         "whitelist": ["123.456.12.34", "::ffff:123.456.12.34"],
         "whitelistLimit": 9999999,
@@ -48,7 +48,7 @@ Edit htmlcoincore-node.json:
       "db": {
         "host": "127.0.0.1",
         "port": "27017",
-        "database": "htmlcoin-explorer",
+        "database": "vipstarcoin-explorer",
         "user": "",
         "password": ""
       },
@@ -56,17 +56,17 @@ Edit htmlcoincore-node.json:
         "updateFromBlockHeight": 0
       }
     },
-    "htmlcoind": {
+    "vipstarcoind": {
       "spawn": {
-        "datadir": "/home/user/.htmlcoin",
-        "exec": "/home/user/htmlcoincore-node/bin/htmlcoind"
+        "datadir": "/home/user/.vipstarcoin",
+        "exec": "/home/user/vipstarcoincore-node/bin/VIPSTARCOINd"
       }
     }
   }
 }
 ```
 
-Edit htmlcoin.conf:
+Edit vipstarcoin.conf:
 ```
 server=1
 whitelist=127.0.0.1
@@ -87,7 +87,7 @@ logevents=1
 ```
 
 ```
-$(npm bin)/htmlcoincore-node start
+$(npm bin)/vipstarcoincore-node start
 ```
 
 
@@ -96,15 +96,15 @@ $(npm bin)/htmlcoincore-node start
 To manually install all of the necessary components, you can run these commands:
 
 ```bash
-npm install -g htmlcoincore-node
-htmlcoincore-node create mynode
+npm install -g vipstarcoincore-node
+vipstarcoincore-node create mynode
 cd mynode
-htmlcoincore-node install htmlcoin-api
-htmlcoincore-node install htmlcoin-explorer
-htmlcoincore-node start
+vipstarcoincore-node install vipstarcoin-api
+vipstarcoincore-node install vipstarcoin-explorer
+vipstarcoincore-node start
 ```
 
-Open a web browser to `http://localhost:3001/htmlcoin-explorer`
+Open a web browser to `http://localhost:3001/vipstarcoin-explorer`
 
 ## Development
 
@@ -155,11 +155,11 @@ compile***.
 
 ## Note
 
-For more details about the [HTMLCOIN API](https://github.com/HTMLCOIN/htmlcoin-api) configuration and end-points, go to [HTMLCOIN API](https://github.com/HTMLCOIN/htmlcoin-api).
+For more details about the [VIPSTARCOIN API](https://github.com/VIPSTARCOIN/vipstarcoin-api) configuration and end-points, go to [VIPSTARCOIN API](https://github.com/VIPSTARCOIN/vipstarcoin-api).
 
 ## Contribute
 
-Contributions and suggestions are welcomed at the [Explorer GitHub repository](https://github.com/HTMLCOIN/htmlcoin-explorer).
+Contributions and suggestions are welcomed at the [Explorer GitHub repository](https://github.com/VIPSTARCOIN/vipstarcoin-explorer).
 
 
 ## License
