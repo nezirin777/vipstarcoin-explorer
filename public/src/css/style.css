@@ -3165,14 +3165,6 @@ corresponds to the arrow we want to display */
   order: 0; }
   .logo img {
     vertical-align: top; }
-  .logo .logoPic-hover {
-    display: none; }
-  .logo:hover .logoPic-def {
-    display: none; }
-  .logo:hover g {
-    fill: red; }
-  .logo:hover .logoPic-hover {
-    display: block; }
 
 .nav {
   float: left; }
