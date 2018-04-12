@@ -56,6 +56,17 @@
 					<div class="labeled" translate>Block Reward</div>
 				</div>
 			</div>
+			<div class="limiter"></div>
+			<div class="clearfix">
+				<div class="item">
+					<div class="label">{{ IC.blockchainInfo.difficulty['proof-of-work'] | numeraljs : '0,0[.][00000000]' }}</div>
+					<div class="labeled" translate>Difficulty</div>
+				</div>
+				<div class="item">
+					<div class="label">{{ IC.blockchainInfo.miningInfo && IC.blockchainInfo.miningInfo.netstakeweight ? IC.blockchainInfo.miningInfo.netstakeweight / 1e8 : 0 | numeraljs : '0,0[.][00000000]' }}</div>
+					<div class="labeled" translate>Network Weight</div>
+				</div>
+			</div>
       <!--
 			<div class="section__heading">
 				<div class="section__title">Value Info</div>
