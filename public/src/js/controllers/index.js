@@ -199,13 +199,10 @@ function($scope, $rootScope, $window, $timeout, moment, getSocket, Blocks, Trans
             q: 'getInfo'
         }).$promise, StatisticsTotalSupply.get({format: 'object'}).$promise, Status.get({
             q: 'getStakingInfo'
-        }).$promise, Status.get({
-            q: 'getMiningInfo'
-        })]).then(function (results) {
+        }).$promise]).then(function (results) {
             if (results[0] && results[1] && results[2]) {
                 self.blockchainInfo = results[0].info;
                 self.blockchainInfo.stakingInfo = results[2];
-                self.blockchainInfo.miningInfo = results[3];
                 self.blockchainInfo.supply = results[1].supply;
 			}
         });
