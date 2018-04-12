@@ -667,8 +667,11 @@ b, strong {
         width: 100%;
         padding-bottom: 8px; }
         .content__list-blockchain .item-full .label {
+          text-align: right;
           font-size: 32px; }
         .content__list-blockchain .item-full .labeled {
+          border-bottom: solid 1px #ccc;
+          margin-bottom: 1em;
           font-size: 18px; }
     .content__list-blockchain .label {
       font-size: 27px;
