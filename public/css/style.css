@@ -712,7 +712,7 @@ b, strong {
     .heading__pic img {
       vertical-align: middle; }
   .heading__title {
-    font-size: 80px;
+    font-size: 3.5em;
     font-weight: 500;
     font-family: "Euclidflex", sans-serif;
     line-height: 90px;
