@@ -9,16 +9,16 @@
     <div class="search__box">
         <div class="search__wrap search__wrap-token">
             <div ng-if="TSC.error" class="error__text fsz-12 c-red pos-abs-top-right">{{ TSC.error }}</div>
-            <input autocomplete="off" type="text" name="query" ng-model="TSC.query" ng-change="TSC.changeQuery()" class="field search__field" ng-class="{'error': TSC.error}" placeholder="Enter an QRC20 Contract Address or Token Name">
+            <input autocomplete="off" type="text" name="query" ng-model="TSC.query" ng-change="TSC.changeQuery()" class="field search__field" ng-class="{'error': TSC.error}" placeholder="Enter an VRC20 Contract Address or Token Name">
 
             <div class="search__results active" ng-if="TSC.searchResult && TSC.searchResult.items.length">
                 <div class="ddMenu">
                     <ul class="ddMenu__list">
                         <li class="ddMenu__item" ng-repeat="item in TSC.searchResult.items">
-                            <a href="/token/{{ item.contract_address_base }}" class="ddMenu__link">
-                                <span class="ddMenu__linkRow">{{ item.name ? item.name : item.contract_address_base }} {{ item.symbol ? '(' + item.symbol + ')' : '' }}</span>
+                            <a href="/token/{{ item.contract_address }}" class="ddMenu__link">
+                                <span class="ddMenu__linkRow">{{ item.name ? item.name : item.contract_address }} {{ item.symbol ? '(' + item.symbol + ')' : '' }}</span>
                                 <span class="ddMenu__linkRow muted">
-										QRC20 TOKEN: {{ item.contract_address_base }}
+										VRC20 TOKEN: {{ item.contract_address }}
 									</span>
                                 <span class="ddMenu__linkRow muted">
 										{{ $root.token.convertDecimals(item.total_supply, item.decimals) }} {{ item.symbol }}
@@ -50,7 +50,7 @@
             <div class="tr" ng-repeat="contract in TSC.contractsList">
                 <div class="td">
                     <div class="">
-                        <a href="/token/{{ contract.contract_address_base }}" class="ellipsis mark title">{{ contract.symbol }} {{ contract.name ? ((contract.symbol ? '- ' : '') + contract.name) : '' }}</a>
+                        <a href="/token/{{ contract.contract_address }}" class="ellipsis mark title">{{ contract.symbol }} {{ contract.name ? ((contract.symbol ? '- ' : '') + contract.name) : '' }}</a>
                     </div>
                     <div ng-if="contract.description" class="descr muted">
                         {{ contract.description }}
@@ -59,7 +59,7 @@
                 <div class="td">{{ $root.token.convertDecimals(contract.total_supply, contract.decimals) }}</div>
                 <div class="td">{{ contract.count_holders | numeraljs : '0,0[.][00000000]' }}</div>
                 <div class="td">
-                    <a href="/address/{{ contract.contract_address_base }}" class="ellipsis mark">{{ contract.contract_address_base }}</a>
+                    <a href="/address/{{ contract.contract_address }}" class="ellipsis mark">{{ contract.contract_address }}</a>
                 </div>
             </div>
         </div>

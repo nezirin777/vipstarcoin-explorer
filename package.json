@@ -1,7 +1,7 @@
 {
   "name": "vipstarcoin-explorer",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the VIPSTARCOIN network and build your own services with it.",
-  "version": "0.6.3",
+  "version": "0.11.3",
   "repository": "https://github.com/fkfk/vipstarcoin-explorer.git",
   "contributors": [],
   "bugs": {

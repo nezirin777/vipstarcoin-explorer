@@ -297,11 +297,11 @@ msgid ""
 "Insight is an <a href=\"https://insight.is/\" target=\"_blank\">open-source "
 "VIPSTARCOIN blockchain explorer</a> with complete REST and websocket APIs that "
 "can be used for writing web wallets and other apps that need more advanced "
-"blockchain queries than provided by vipstarcoind RPC. Check out the <a href="
+"blockchain queries than provided by VIPSTARCOINd RPC. Check out the <a href="
 "\"https://github.com/bitpay/insight-ui\" target=\"_blank\" class=\"ng-scope"
 "\">source code</a>."
 msgstr ""
-"Insight は、vipstarcoind RPCの提供するものよりも詳細なブロックチェインへの問い合"
+"Insight は、VIPSTARCOINd RPCの提供するものよりも詳細なブロックチェインへの問い合"
 "わせを必要とするウェブウォレットやその他のアプリを書くのに使える、完全なREST"
 "およびwebsocket APIを備えた <a href=\"http://live.insight.is/\" target="
 "\"_blank\">オープンソースのビットコインブロックエクスプローラ</a> です。<a "
@@ -343,7 +343,7 @@ msgstr "直前のブロック"
 #: public/views/block_list.html
 #, fuzzy
 #| msgid "Latest Blocks"
-msgid "Lastest block from date"
+msgid "Latest blocks from this date"
 msgstr "最新のブロック"
 
 #: public/views/transaction.html
@@ -473,7 +473,7 @@ msgstr ""
 
 #: public/views/messages_verify.html
 msgid "VIPSTARCOIN comes with a way of signing arbitrary messages."
-msgstr "VIPSTARCOINには任意のメッセージを署名する昨日が備わっています。"
+msgstr "VIPSTARCOINには任意のメッセージを署名する機能が備わっています。"
 
 #: public/views/statistics.html
 msgid "VIPSTARCOIN Mined"
@@ -608,7 +608,7 @@ msgid "The message is verifiably from {{verification.address}}."
 msgstr "メッセージは{{verification.address}}により検証されました。"
 
 #: public/src/js/controllers/statistics.js
-msgid "The number of daily confirmed Bitcoin transactions."
+msgid "The number of daily confirmed VIPSTARCOIN transactions."
 msgstr ""
 
 #: public/src/js/controllers/statistics.js

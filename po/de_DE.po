@@ -353,7 +353,7 @@ msgstr "Letzter Block"
 #: public/views/block_list.html
 #, fuzzy
 #| msgid "Latest Blocks"
-msgid "Lastest block from date"
+msgid "Latest blocks from this date"
 msgstr "Letzte Blöcke"
 
 #: public/views/transaction.html
@@ -620,7 +620,7 @@ msgid "The message is verifiably from {{verification.address}}."
 msgstr ""
 
 #: public/src/js/controllers/statistics.js
-msgid "The number of daily confirmed Bitcoin transactions."
+msgid "The number of daily confirmed VIPSTARCOIN transactions."
 msgstr ""
 
 #: public/src/js/controllers/statistics.js
