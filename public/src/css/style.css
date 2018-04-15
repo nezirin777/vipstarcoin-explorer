@@ -4393,9 +4393,7 @@ corresponds to the arrow we want to display */
     height: 27px;
     line-height: 25px;
     font-size: 16px;
-    color: #2e9ad0;
     border: 1px solid rgba(46, 154, 208, 0.3);
-    background: #242f39;
     padding-left: 15px;
     padding-right: 35px;
     cursor: pointer; }
@@ -4423,7 +4421,7 @@ corresponds to the arrow we want to display */
     right: 0;
     margin-top: 10px;
     border: 1px solid rgba(46, 154, 208, 0.3);
-    background: #242f39; }
+    background: #ffffff; }
     .ddMenu__list {
       overflow-x: hidden;
       overflow-y: auto;
