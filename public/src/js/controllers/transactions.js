@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('insight.transactions').controller('TransactionsController',
-function($scope, $rootScope, $routeParams, $location, Transaction, TransactionsByBlock, TransactionsByAddress, Contracts, $q, ERC20ContractInfo) {
+function($scope, $rootScope, $routeParams, $location, Transaction, TransactionsByBlock, TransactionsByAddress, Contracts, $q, ERC20ContractInfo, Web3Utils) {
 
 	var self = this;
 	var pageNum = 0;
