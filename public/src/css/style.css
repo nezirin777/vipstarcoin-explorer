@@ -3325,7 +3325,9 @@ corresponds to the arrow we want to display */
   margin-right: 10px;
   order: 0; }
   .logo img {
-    vertical-align: top; }
+    vertical-align: top;
+    width: 250px;
+    height: 250px; }
   .logo .logoPic-hover {
     display: none; }
   .logo:hover .logoPic-def {
