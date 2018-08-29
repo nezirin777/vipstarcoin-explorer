@@ -107,18 +107,16 @@
 					</div>
 				</div>
 			</div>
-			<span class="arrow">
-				<span class="arrowIcon icon-arrows-right"></span>
-			</span>
-		</div>
-		<div class="col" ng-repeat="vin in tx.vin" ng-if="!vin.addr">
-			<div>
+			<div ng-repeat="vin in tx.vin" ng-if="!vin.addr">
 				<div class="transactions__row">
 					<span class="name__text" translate>
 						No Inputs (Newly Generated Coins)
 					</span>
 				</div>
 			</div>
+			<span class="arrow">
+				<span class="arrowIcon icon-arrows-right"></span>
+			</span>
 		</div>
 		<div class="col">
 			<div ng-repeat="vout in tx.voutSimple" >
