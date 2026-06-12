@@ -2,34 +2,32 @@
   "name": "vipstarcoin-explorer",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the VIPSTARCOIN network and build your own services with it.",
   "version": "0.11.3",
-  "repository": "https://github.com/fkfk/vipstarcoin-explorer.git",
+  "repository": "https://github.com/nezirin777/vipstarcoin-explorer.git",
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/fkfk/vipstarcoin-explorer/issues"
+    "url": "https://github.com/nezirin777/vipstarcoin-explorer/issues"
   },
-  "homepage": "https://github.com/fkfk/vipstarcoin-explorer",
+  "homepage": "https://github.com/nezirin777/vipstarcoin-explorer",
   "license": "MIT",
   "keywords": [
     "insight",
     "blockchain",
     "blockexplorer",
     "vipstarcoin",
-    "vipstarcoincore",
     "front-end"
   ],
-  "vipstarcoincoreNode": "vipstarcoincore-node",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+  },
   "devDependencies": {
-    "bower": "~1.2.8",
-    "grunt": "~0.4.2",
-    "grunt-cli": "~0.1.11",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.3.2",
-    "grunt-contrib-watch": "*",
-    "grunt-macreload": "*",
-    "grunt-css": "~0.5.4",
-    "grunt-markdown": "~0.5.0",
-    "grunt-angular-gettext": "^0.2.15"
+    "bower": "~1.8.14",
+    "grunt": "~1.6.1",
+    "grunt-cli": "~1.4.3",
+    "grunt-contrib-concat": "~2.1.0",
+    "grunt-contrib-uglify": "~5.2.2",
+    "grunt-contrib-watch": "~1.1.0",
+    "grunt-contrib-cssmin": "~5.0.0",
+    "grunt-angular-gettext": "^2.4.0"
   }
 }

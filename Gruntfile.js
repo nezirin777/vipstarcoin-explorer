@@ -6,9 +6,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-css');
-	grunt.loadNpmTasks('grunt-markdown');
-	grunt.loadNpmTasks('grunt-macreload');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-angular-gettext');
 
   // Project Configuration
@@ -27,9 +25,9 @@ module.exports = function(grunt) {
 			},
 			vendors: {
 			src: [
-				'public/src/js/ios-imagefile-megapixel/megapix-image.js', 
-				'public/lib/qrcode-generator/js/qrcode.js', 
-				'public/lib/qrcode-generator/js/qrcode_UTF8.js', 
+				'public/src/js/ios-imagefile-megapixel/megapix-image.js',
+				'public/lib/qrcode-generator/js/qrcode.js',
+				'public/lib/qrcode-generator/js/qrcode_UTF8.js',
 				'public/lib/jquery/dist/jquery.min.js',
 				'public/lib/moment/min/moment.min.js',
 				'public/lib/moment/locale/de.js',
@@ -49,14 +47,14 @@ module.exports = function(grunt) {
 		},
 		angular: {
 			src: [
-				'public/lib/angular/angular.min.js', 
-				'public/lib/angular-resource/angular-resource.min.js', 
-				'public/lib/angular-route/angular-route.min.js', 
-				'public/lib/angular-qrcode/angular-qrcode.js', 
+				'public/lib/angular/angular.min.js',
+				'public/lib/angular-resource/angular-resource.min.js',
+				'public/lib/angular-route/angular-route.min.js',
+				'public/lib/angular-qrcode/angular-qrcode.js',
 				'public/lib/angular-moment/angular-moment.min.js',
-				'public/lib/angular-bootstrap/ui-bootstrap.js', 
-				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js', 
-				'public/lib/angular-ui-utils/ui-utils.min.js', 
+				'public/lib/angular-bootstrap/ui-bootstrap.js',
+				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
+				'public/lib/angular-ui-utils/ui-utils.min.js',
 				'public/lib/angular-gettext/dist/angular-gettext.min.js',
 				'public/lib/angular-moment/angular-moment.min.js',
 				'public/lib/ng-scrollbars/dist/scrollbars.min.js',
@@ -69,13 +67,13 @@ module.exports = function(grunt) {
 		},
 		main: {
 			src: [
-				'public/src/js/app.js', 
-				'public/src/js/controllers/*.js', 
-				'public/src/js/services/*.js', 
-				'public/src/js/directives/*.js', 
-				'public/src/js/filters.js', 
-				'public/src/js/config.js', 
-				'public/src/js/init.js', 
+				'public/src/js/app.js',
+				'public/src/js/controllers/*.js',
+				'public/src/js/services/*.js',
+				'public/src/js/directives/*.js',
+				'public/src/js/filters.js',
+				'public/src/js/config.js',
+				'public/src/js/init.js',
 				'public/src/js/translations.js'
 			],
 			dest: 'public/js/main.js'
